@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hotel Rural La Encina</h1>
+    <h1>Haga su reserva</h1>
+    <form action="procesareserva.php" method="get">
+    <fieldset>
+        <legend>datos personales</legend>
+          <p>  <label for=”Nom”>Nombre</label> 
+            <input type="text" maxlength="100" name="Nombre" required
+            placeholder="Escriba su nombre completo" autofocus>
+        </p>
+          <p> <label for=”Apll”>Apellidos</label>
+            <input type="text" maxlength="100" name="apellidos" required
+            placeholder="Escriba sus dos apellidos ">
+        </p>
+        <p><label for="DNI ">DNI</label>
+            <input type="text" maxlength="10" name="DNI" required placeholder="DNI con letra">
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>Datos de su estancia</legend>
+        <p><h2>Tipo de Habitación</h2>
+            <label for="Individual">Individual</label>
+               <input type="radio" value="I" checked id="Individual" name="Habitación" >
+            <label for="Doble">Doble</label>
+               <input type="radio" value="D" id="Doble" name="Habitación">
+         <label for="Triple">Triple</label>
+              <input type="radio" value="T" id="Triple" name="Habitación">
+
+
+    </p>    
+    <p>
+        <label for="numero de personas">Número de personas</label>
+    <select name="numero de personas" id="numero de personas" >
+        <option value="1" selected >1</option>
+        <option value="2" selected >2</option>
+        <option value="3" selected >3</option>
+    
+    </select>
+    
+    </p>
+    <p> Llevo mascota <input type="checkbox" name="mascota" checked> 
+
+    </p>
+    <p>
+        Fecha  de llegada <input type="date">
+    </p>
+    <p>
+        Hora de llegada <input type="time">
+    </p>
+    
+      <p>  <input type="submit" value="Enviar">
+         <input type="reset" value="Reiniciar" id="">
+    </p>
+        
+</fieldset>
+
+
+</form>
+<a href="index.html">Volver</a>
+</body>
+</html>
